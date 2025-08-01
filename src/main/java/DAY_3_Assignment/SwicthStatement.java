@@ -20,5 +20,7 @@ public class SwicthStatement {
                 System.out.println("invalid number");
         }
 
+
+
     }
 }
