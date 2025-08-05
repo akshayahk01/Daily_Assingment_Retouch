@@ -58,6 +58,7 @@ public class UserInput_assignment {
                           if ( deposit > 0){
                               balance+= deposit;
                               System.out.println("Succesfully deposited you amount :" + deposit);
+                              System.out.println("your balance: " + balance);
                           }else {
                               System.out.println("invaild amount");
                           };
@@ -66,7 +67,7 @@ public class UserInput_assignment {
                       case 3:
                           System.out.println("Enter the money you want withdraw");
                           withdraw = S.nextDouble();
-                          if (withdraw <= 0  ){
+                          if (withdraw <  0  ){
 
                               System.out.println("enter valid amount");;
                           } else if (withdraw > balance) {
@@ -75,7 +76,7 @@ public class UserInput_assignment {
                           } else {
                               balance -= withdraw;
                               System.out.println("You  successfully withdrawn: " + withdraw);
-                              System.out.println("Remaining balance: " + balance);
+                              System.out.println("your balance: " + balance);
                           }
                           break;
                       default:
